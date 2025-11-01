@@ -59,12 +59,85 @@ Você também pode executar o código diretamente no [DartPad](https://dartpad.d
 ## 📁 Estrutura do Projeto
 
 ```
-lib/
-├── main.dart              # Aplicação Flutter principal
-carrinho_compras.dart      # Versão DartPad (standalone)
-pubspec.yaml              # Configurações do projeto
-README.md                 # Este arquivo
+Flutter-Sistema-de-Compras/
+├── 📂 android/                    # Configurações específicas para Android
+│   ├── app/                       # Configurações da aplicação Android
+│   │   ├── src/                   # Código fonte Android nativo
+│   │   └── build.gradle.kts       # Build script do app Android
+│   ├── gradle/                    # Wrapper do Gradle
+│   ├── build.gradle.kts           # Build script principal Android
+│   └── settings.gradle.kts        # Configurações do projeto Android
+│
+├── 📂 ios/                        # Configurações específicas para iOS
+│   ├── Runner/                    # App principal iOS
+│   │   ├── Assets.xcassets/       # Recursos visuais (ícones, imagens)
+│   │   ├── Base.lproj/           # Arquivos de localização
+│   │   └── AppDelegate.swift      # Delegado principal da aplicação iOS
+│   ├── Runner.xcodeproj/          # Projeto Xcode
+│   └── Runner.xcworkspace/        # Workspace do Xcode
+│
+├── 📂 linux/                      # Configurações para Linux Desktop
+│   ├── flutter/                   # Configurações Flutter para Linux
+│   └── runner/                    # Executável principal Linux
+│
+├── 📂 macos/                      # Configurações para macOS Desktop
+│   ├── Flutter/                   # Configurações Flutter para macOS
+│   ├── Runner/                    # App principal macOS
+│   └── Runner.xcodeproj/          # Projeto Xcode para macOS
+│
+├── 📂 windows/                    # Configurações para Windows Desktop
+│   ├── flutter/                   # Configurações Flutter para Windows
+│   └── runner/                    # Executável principal Windows
+│
+├── 📂 web/                        # Configurações para Web
+│   ├── icons/                     # Ícones para PWA
+│   ├── index.html                 # Página principal HTML
+│   └── manifest.json              # Manifesto da aplicação web
+│
+├── 📂 lib/                        # 🎯 CÓDIGO PRINCIPAL DA APLICAÇÃO
+│   └── main.dart                  # Ponto de entrada do Flutter
+│
+├── 📂 test/                       # Testes automatizados
+│   └── widget_test.dart           # Testes de widgets
+│
+├── 📄 carrinho_compras.dart       # 🎯 Versão standalone para DartPad
+├── 📄 pubspec.yaml               # Dependências e configurações do projeto
+├── 📄 analysis_options.yaml       # Regras de análise de código
+├── 📄 README.md                  # Este arquivo de documentação
+└── 📄 flutter_application_1.iml   # Configurações do IntelliJ/Android Studio
 ```
+
+### 📂 **Pastas Principais Explicadas:**
+
+#### **`lib/`** - Código da Aplicação
+- **`main.dart`**: Arquivo principal que contém toda a lógica do sistema de compras
+- Aqui ficaria todo o código Dart/Flutter da aplicação
+
+#### **`android/`** - Plataforma Android
+- Contém todas as configurações necessárias para compilar e executar no Android
+- **`app/src/`**: Código nativo Android (se necessário)
+- **`build.gradle.kts`**: Scripts de build para Android
+
+#### **`ios/`** - Plataforma iOS
+- Configurações para compilar e executar no iOS/iPadOS
+- **`Runner/`**: Aplicação principal iOS
+- **`Assets.xcassets/`**: Ícones e recursos visuais
+
+#### **`web/`** - Plataforma Web
+- **`index.html`**: Página web que carrega a aplicação Flutter
+- **`manifest.json`**: Configurações para PWA (Progressive Web App)
+
+#### **Desktop Platforms (`linux/`, `macos/`, `windows/`)**
+- Configurações específicas para cada sistema operacional desktop
+- Permitem executar a aplicação como app nativo
+
+#### **`test/`** - Testes
+- **`widget_test.dart`**: Testes automatizados da interface
+
+#### **Arquivos de Configuração:**
+- **`pubspec.yaml`**: Define dependências, versão, metadados do projeto
+- **`analysis_options.yaml`**: Regras de qualidade de código
+- **`carrinho_compras.dart`**: Versão simplificada para executar no DartPad
 
 ## 🎯 Exemplo de Uso
 
