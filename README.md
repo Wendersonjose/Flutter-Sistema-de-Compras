@@ -31,30 +31,39 @@ Este projeto implementa um sistema de carrinho de compras que:
 ## 🚀 Como Executar
 
 ### Pré-requisitos
-- Flutter SDK (versão 3.9.2 ou superior)
-- Dart SDK
-- Editor de código (VS Code, Android Studio, etc.)
+- SDK do Dart instalado
+- SDK do Flutter (opcional)
 
-### Instalação e Execução
+### Executando o Projeto
 
-1. **Clone o repositório:**
+#### **Opção 1: DartPad Online (Recomendado)**
+1. Acesse o [DartPad](https://dartpad.dev)
+2. Copie o conteúdo do arquivo `carrinho_compras.dart`
+3. Cole no DartPad
+4. Clique em "Run"
+
+#### **Opção 2: Dart Local**
 ```bash
+# Clone o repositório
 git clone https://github.com/Wendersonjose/Flutter-Sistema-de-Compras.git
-cd "Flutter Sistema de Compras"
+cd Flutter-Sistema-de-Compras
+
+# Execute o arquivo principal
+dart run carrinho_compras.dart
 ```
 
-2. **Instale as dependências:**
+#### **Opção 3: Flutter**
 ```bash
+# Clone o repositório
+git clone https://github.com/Wendersonjose/Flutter-Sistema-de-Compras.git
+cd Flutter-Sistema-de-Compras
+
+# Instale as dependências
 flutter pub get
-```
 
-3. **Execute a aplicação:**
-```bash
+# Execute o projeto
 flutter run
 ```
-
-### Executar no DartPad
-Você também pode executar o código diretamente no [DartPad](https://dartpad.dev) copiando o conteúdo do arquivo `carrinho_compras.dart`.
 
 ## 📁 Estrutura do Projeto
 
