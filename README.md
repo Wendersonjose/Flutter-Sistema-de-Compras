@@ -39,7 +39,7 @@ Este projeto implementa um sistema de carrinho de compras que:
 
 1. **Clone o repositório:**
 ```bash
-git clone [url-do-repositório]
+git clone https://github.com/Wendersonjose/Flutter-Sistema-de-Compras.git
 cd "Flutter Sistema de Compras"
 ```
 
